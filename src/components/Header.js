@@ -1,8 +1,8 @@
 import React from "react"
 
-function Header() {
+function Header(props) {
     return (
-        <header><h1>Sally Student | Resume</h1></header>
+        <header><h1>{props.name} | Resume</h1></header>
     )
 }
 

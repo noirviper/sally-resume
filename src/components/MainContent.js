@@ -1,7 +1,7 @@
 import React from "react"
 import Work from "./Work"
 
-function MainContent() {
+function MainContent(prop) {
     return (
         <main>
             <section class="img-container">
@@ -10,9 +10,9 @@ function MainContent() {
             <section>
                 <h2>Contact Info:</h2>
                 <address>
-                <p><b>Name:</b> Sally Student</p>
-                <p><b>Email:</b> <a href="mailto:sally@student.com">sally@student.com</a></p>
-                <p><b>Phone Number:</b> <a href="tel:+15555555555">555-555-5555</a></p>
+                <p><b>Name:</b> {prop.name}</p>
+                <p><b>Email:</b> <a href={prop.emailUrl}>{prop.email}</a></p>
+                <p><b>Phone Number:</b> <a href={prop.numberUrl}>{prop.number}</a></p>
                 </address>
                 
             </section>
